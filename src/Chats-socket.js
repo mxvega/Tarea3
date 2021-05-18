@@ -50,7 +50,7 @@ const Chats = () => {
         {livechats.map(function(mensajes) {
           if (mensajes) { return (
             <div className="order-message">
-              <p>{mensajes.name}, {moment(Date(mensajes.date)).format('LLL')}: {mensajes.message}</p>  
+              <p>{mensajes.name}, {moment(new Date(mensajes.date)).format('LLL')}: {mensajes.message}</p>  
             </div>
           )}
         })}
