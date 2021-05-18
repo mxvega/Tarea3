@@ -12,7 +12,7 @@ const Chats = () => {
   
   useEffect(() => {
       socket.on('CHAT', livechat => {
-          setChats((prev)=>[...prev, livechat]);
+          setChats((prev)=>[...prev, livechat]); 
       })
   }, []);
 
