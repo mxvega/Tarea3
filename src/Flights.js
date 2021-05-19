@@ -39,10 +39,6 @@ const Flights = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {flight.map(function(vuelos) {
-/*             const destino = [
-              vuelos.destination
-            ] */
-
             const multiPolyline = [
               [
                 vuelos.origin[0], vuelos.origin[1]
@@ -56,7 +52,6 @@ const Flights = () => {
               <Polyline pathOptions={limeOptions} positions={multiPolyline} />
             )
           })}
-
           {flight.map(function(vuelos) {
             const origen = [
               vuelos.origin[0], vuelos.origin[1]
@@ -66,7 +61,6 @@ const Flights = () => {
               </Marker>  
             )
           })}
-
           {position.map(function(posicion) {
             const avionViajando = [
               posicion.position[0], posicion.position[1]
@@ -81,7 +75,6 @@ const Flights = () => {
           })}
         </MapContainer>
       </div>
-
       <h2>Flight Information</h2>
       <div className="order-container-title" style={{textAlign: "left"}}>
           {flight.map(function(vuelos) {

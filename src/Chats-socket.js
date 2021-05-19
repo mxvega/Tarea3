@@ -55,7 +55,6 @@ const Chats = () => {
           )}
         })}
       </div>
-
     </div>
   )
 };

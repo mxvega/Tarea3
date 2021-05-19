@@ -11,7 +11,6 @@ const App = () => {
       <Flights />
       <h2>Chat</h2>
       <Chats />
-
     </div>
   );
 };
